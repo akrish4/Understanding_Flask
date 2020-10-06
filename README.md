@@ -15,9 +15,13 @@
     $ mkdir project1
     $ cd project1
     $ pip install virtualenv
-    $ virtualenv env
+    $ virtualenv env 
+          OR
+    py -m virtualenv env
 #### Activate the environment
-    >env\Scripts\activate
+    >env\Scripts\activate 
+        OR
+    source env/Scripts/activate
 #### Install Flask
       $ pip install Flask
 ## A minimal Flask application looks something like this:
