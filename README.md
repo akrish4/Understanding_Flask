@@ -12,11 +12,12 @@
  - Python 3 comes bundled with the venv module to create virtual environments. 
 ### Create an environment
 #### Create a project folder and a venv folder within:
-    $ mkdir myproject
-    $ cd myproject
-    $ python3 -m venv venv
+    $ mkdir project1
+    $ cd project1
+    $ pip install virtualenv
+    $ virtualenv env
 #### Activate the environment
-    > venv\Scripts\activate
+    G:\Understanding Flask\project1>env\Scripts\activate
 #### Install Flask
       $ pip install Flask
 ## A minimal Flask application looks something like this:
@@ -27,6 +28,11 @@
        @app.route('/')
        def hello_world():
             return 'Hello, World!'
+       
+       
+     if __name__ == "__main__":
+          app.run(debug=True)
+
  ### So what did that code do?
  - First we imported the Flask class. An instance of this class will be our WSGI application.
 
