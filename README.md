@@ -45,7 +45,7 @@
  - We then use the route() decorator to tell Flask what URL should trigger our function.
 
  - The function is given a name which is also used to generate URLs for that particular function, and returns the message we want to display in the user’s browser.
- <br>
+ 
 ***Just save it as hello.py or something similar. Make sure to not call your application flask.py because this would conflict with Flask itself.***
-<br>
+
 This is the [link](https://github.com/akrish4/Understanding_Flask/blob/main/hello.py) to the code used in the above example.
