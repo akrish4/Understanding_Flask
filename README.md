@@ -2,6 +2,23 @@
 ##  What is Flask ?
  - Flask is a web application framework in ***python***
  - Flask depends on the ***Jinja template engine*** and the ***Werkzeug WSGI toolkit.***
+## Installation 
+ - I recommend using the latest version of Python 3. Flask supports Python 3.5 and newer.
+### Virtual environments
+ - What problem does a virtual environment solve? The more Python projects you have, the more likely it is that you need to work with different versions of Python libraries, or even Python itself. Newer versions of libraries for one project can break compatibility in another project.
+
+ - Virtual environments are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system’s packages.
+
+ - Python 3 comes bundled with the venv module to create virtual environments. 
+### Create an environment
+#### Create a project folder and a venv folder within:
+    $ mkdir myproject
+    $ cd myproject
+    $ python3 -m venv venv
+#### Activate the environment
+    > venv\Scripts\activate
+#### Install Flask
+      $ pip install Flask
 ## A minimal Flask application looks something like this:
     
        from flask import Flask
@@ -18,4 +35,4 @@
  - We then use the route() decorator to tell Flask what URL should trigger our function.
 
  - The function is given a name which is also used to generate URLs for that particular function, and returns the message we want to display in the user’s browser.
-
+***Just save it as hello.py or something similar. Make sure to not call your application flask.py because this would conflict with Flask itself.***
