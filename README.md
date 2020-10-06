@@ -14,14 +14,14 @@
 #### Create a project folder and a venv folder within:
     $ mkdir project1
     $ cd project1
-    $ pip install virtualenv
-    $ virtualenv env 
+    $ pip install virtualenv           (in cmd)
+    $ virtualenv env                    (in cmd)
           OR
-    py -m virtualenv env
+    py -m virtualenv env                 (in bash)
 #### Activate the environment
-    >env\Scripts\activate 
+    >env\Scripts\activate                (in cmd)
         OR
-    source env/Scripts/activate
+    source env/Scripts/activate             (in bash)
 #### Install Flask
       $ pip install Flask
 ## A minimal Flask application looks something like this:
@@ -46,3 +46,4 @@
 
  - The function is given a name which is also used to generate URLs for that particular function, and returns the message we want to display in the user’s browser.
 ***Just save it as hello.py or something similar. Make sure to not call your application flask.py because this would conflict with Flask itself.***
+This is the [link](https://github.com/akrish4/Understanding_Flask/blob/main/hello.py) to the code used in the above example.
